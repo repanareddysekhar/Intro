@@ -6,8 +6,12 @@ public class MainClass {
        Confirmed employee=new Confirmed();
        Accounts accounts=new Accounts();
        accounts.processSalary(employee);
-       employee.netSalary();
-		
+       
+       Interns interns=new Interns();
+       accounts.processSalary(interns);
+
+       ContractEmployee contractEmployee = new ContractEmployee();
+       accounts.processSalary(contractEmployee);
 	}
 
 }
