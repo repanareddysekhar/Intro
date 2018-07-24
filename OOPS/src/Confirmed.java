@@ -6,6 +6,9 @@ public class Confirmed extends Employee{
 		// TODO Auto-generated method stub
 		System.out.println("Confirmed employee salary");
 	}
+	public void transportFacility(){
+		System.out.println("transport Facility");
+	}
 	
 
 }

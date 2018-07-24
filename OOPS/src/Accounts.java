@@ -2,7 +2,15 @@
 public class Accounts {
 
 	  public void processSalary(Employee employee){
-		  employee.netSalary();
+		 if(employee!=null)
+		 {
+			 if(employee instanceof Confirmed){
+				Confirmed confirmed=  (Confirmed)employee;
+				confirmed.transportFacility();
+			 }
+			 employee.netSalary();
+		 }
+		 
 		  
 	  }
 }
